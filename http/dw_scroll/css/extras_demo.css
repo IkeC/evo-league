@@ -1,0 +1,45 @@
+#extra_controls, #scrollbar { 
+    display:block; /* initially display:none; to hide from incapable */
+    }
+
+div#wn	{ 
+	position:relative;
+	width:280px; height:200px; 
+	overflow:hidden;
+	}
+div.content { /* hide content to be swapped in */
+	position:absolute; visibility:hidden;
+	left:0px; top:0px; 
+	}
+div#lyr1 { /* show first div */
+    visibility:visible;
+    }
+div#scrollbar { 
+  position:relative;
+  width:11px; height:200px; 
+  font-size:1px;  /* so no gap or misplacement due to image vertical alignment */
+  }
+div#track { 
+  position:absolute; left:0; top:12px;
+  width:11px; height:176px;
+  background: #336;
+  }
+div#dragBar {
+  position:absolute; left:1px; top:1px;
+  width:9px; height:20px;
+  background-color:#ceced6;
+  }  
+div#up { position:absolute; left:0; top:0; }  
+div#down { position:absolute; left:0; bottom:0; }
+
+/* so no gap or misplacement due to image vertical alignment
+font-size:1px in scrollbar has same effect (less likely to be removed, resulting in support issues) */
+div#scrollbar img {
+    display:block; 
+    } 
+    
+/* for safari, to prevent selection problem */
+div#scrollbar, div#track, div#dragBar, div#up, div#down {
+    -moz-user-select: none;
+    -khtml-user-select: none;
+}

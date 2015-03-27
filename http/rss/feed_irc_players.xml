@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- generator="FeedCreator 1.7.2" -->
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://www.yoursite/rss/irc_games.php">
+        <title>yoursite Games</title>
+        <description>The latest games from evo-league!</description>
+        <link>http://www.yoursite</link>
+       <dc:date>2008-05-16T03:20:08+01:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96496"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96495"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96494"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96493"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96492"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96491"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96490"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96489"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96488"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96487"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96486"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96485"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96484"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96483"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96482"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96481"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96480"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96479"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96478"/>
+                <rdf:li rdf:resource="http://www.yoursite/games.php#96477"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <item rdf:about="http://www.yoursite/games.php#96496">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: TurkMania  2 - 0  gogerl</title>
+        <link>http://www.yoursite/games.php#96496</link>
+        <description>[MAN] (+21) TurkMania 2 - 0 gogerl (-0) [CHE] - Good games m8.</description>
+        <dc:date>2008-05-14T09:05:38+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96495">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: TurkMania  4 - 1  gogerl</title>
+        <link>http://www.yoursite/games.php#96495</link>
+        <description>[MAD] (+22) TurkMania 4 - 1 gogerl (-0) [LYO] - Good games m8.</description>
+        <dc:date>2008-05-14T09:05:19+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96494">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: exs-kekinho  1 - 1  gecko</title>
+        <link>http://www.yoursite/games.php#96494</link>
+        <description>[INT] (+10) exs-kekinho 1 - 1 gecko (-10) [CHE] - nice player :)</description>
+        <dc:date>2008-05-13T16:05:26+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96493">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  6 - 2  exs-kekinho</title>
+        <link>http://www.yoursite/games.php#96493</link>
+        <description>[LEM] (+17) gecko 6 - 2 exs-kekinho (-0) [BOR] - Nice game, fair player.</description>
+        <dc:date>2008-05-12T16:05:02+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96492">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: TurkMania  2 - 1  exs-kekinho</title>
+        <link>http://www.yoursite/games.php#96492</link>
+        <description>[MAD] (+23) TurkMania 2 - 1 exs-kekinho (-0) [INT] - Playing again after 3 years vs Kev. Well played m8.</description>
+        <dc:date>2008-05-10T16:05:44+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96491">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  3 - 2  RonaldinhoHR</title>
+        <link>http://www.yoursite/games.php#96491</link>
+        <description>[JUV] (+14) gecko 3 - 2 RonaldinhoHR (-0) [VAL] - gg fair player</description>
+        <dc:date>2008-05-07T14:05:33+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96490">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  5 - 1  butuz</title>
+        <link>http://www.yoursite/games.php#96490</link>
+        <description>[SPO] (+15) gecko 5 - 1 butuz (-5) [POR] - Nice game, fair player.</description>
+        <dc:date>2008-05-03T19:05:33+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96489">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: TurkMania  3 - 0  roppin</title>
+        <link>http://www.yoursite/games.php#96489</link>
+        <description>[MAD] (+25) TurkMania 3 - 0 roppin (-0) [MAN] - Clean result. Good player.</description>
+        <dc:date>2008-05-02T11:05:33+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96488">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: TurkMania  1 - 0  roppin</title>
+        <link>http://www.yoursite/games.php#96488</link>
+        <description>[MAD] (+26) TurkMania 1 - 0 roppin (-0) [LIV] - Late winner. Great player.</description>
+        <dc:date>2008-05-02T11:05:21+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96487">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  5 - 2  fredrikm</title>
+        <link>http://www.yoursite/games.php#96487</link>
+        <description>[BLR] (+19) gecko 5 - 2 fredrikm (-0) [TOT] - gg</description>
+        <dc:date>2008-04-30T13:04:26+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96486">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  5 - 2  fredrikm</title>
+        <link>http://www.yoursite/games.php#96486</link>
+        <description>[JUV] (+17) gecko 5 - 2 fredrikm (-0) [BAY] - Nice game.</description>
+        <dc:date>2008-04-30T13:04:18+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96485">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  5 - 3  fredrikm</title>
+        <link>http://www.yoursite/games.php#96485</link>
+        <description>[BOL] (+20) gecko 5 - 3 fredrikm (-0) [TOT] - Nice game!</description>
+        <dc:date>2008-04-24T19:04:18+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96484">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  5 - 0  fredrikm</title>
+        <link>http://www.yoursite/games.php#96484</link>
+        <description>[BLR] (+23) gecko 5 - 0 fredrikm (-20) [TOT] - Nice game, fair player.</description>
+        <dc:date>2008-04-24T19:04:44+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96483">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Edvardsen  2 - 1  fredrikm</title>
+        <link>http://www.yoursite/games.php#96483</link>
+        <description>[NEW] (+37) Edvardsen 2 - 1 fredrikm (-36) [TOT] - .</description>
+        <dc:date>2008-04-23T12:04:01+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96482">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  5 - 1  fredrikm</title>
+        <link>http://www.yoursite/games.php#96482</link>
+        <description>[PSV] (+25) gecko 5 - 1 fredrikm (-39) [AJA] - Nice game, fair player.</description>
+        <dc:date>2008-04-22T18:04:05+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96481">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gecko  5 - 1  fredrikm</title>
+        <link>http://www.yoursite/games.php#96481</link>
+        <description>[PSV] (+28) gecko 5 - 1 fredrikm (-36) [AJA] - Nice game, fair player.</description>
+        <dc:date>2008-04-22T18:04:31+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96480">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: fredrikm  2 - 1  Edvardsen</title>
+        <link>http://www.yoursite/games.php#96480</link>
+        <description>[MAR] (+29) fredrikm 2 - 1 Edvardsen (-35) [UDI] - GG</description>
+        <dc:date>2008-04-22T17:04:59+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96479">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: fredrikm  3 - 0  Edvardsen</title>
+        <link>http://www.yoursite/games.php#96479</link>
+        <description>[TOT] (+46) fredrikm 3 - 0 Edvardsen (-36) [NEW] - GG</description>
+        <dc:date>2008-04-22T17:04:00+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96478">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: fredrikm  2 - 0  Edvardsen</title>
+        <link>http://www.yoursite/games.php#96478</link>
+        <description>[TOT] (+56) fredrikm 2 - 0 Edvardsen (-37) [NEW] - GG</description>
+        <dc:date>2008-04-22T17:04:58+01:00</dc:date>
+    </item>
+    <item rdf:about="http://www.yoursite/games.php#96477">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Edvardsen  5 - 2  fredrikm</title>
+        <link>http://www.yoursite/games.php#96477</link>
+        <description>[SEV] (+26) Edvardsen 5 - 2 fredrikm (-0) [TOT] - No Comment</description>
+        <dc:date>2008-04-21T22:04:10+01:00</dc:date>
+    </item>
+</rdf:RDF>

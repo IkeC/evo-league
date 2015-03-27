@@ -1,0 +1,124 @@
+
+/*
+  phpBBStyles Theme for phpBB version 2+
+  Created by Vjacheslav Trushkin
+  http://www.trushkin.net
+  http://www.phpbbstyles.com
+*/
+
+body { background-color: #FFF; margin: 0px; padding: 0px; }
+body { scrollbar-arrow-color: #3B88C5; scrollbar-face-color: #FFFFFF; scrollbar-track-color: #E0E0E0; scrollbar-highlight-color: #FFFFFF; scrollbar-3dlight-color: #C0C0C0; scrollbar-shadow-color: #FFFFFF; scrollbar-darkshadow-color: #B0B0B0; }
+
+font,th,td,p { font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 12px; }
+a { text-decoration: underline; color: #3B88C5; }
+a:visited { text-decoration: underline; color: #3279B2; }
+a:hover, a:active { text-decoration: underline; color: #FF9C00; }
+hr { height: 0px; border: solid #3888C7 0px; border-top-width: 1px;}
+
+img { border: 0px; }
+form { display: inline; }
+
+table.forumline { background-color: #C0C0C0; }
+table.forumline:hover { background-color: #B0B0B0; }
+
+td.border_left { background-image: url('images/admin_border_left.gif'); width: 10px; }
+td.border_right { background-image: url('images/admin_border_right.gif'); width: 10px; }
+td.content { background-color: #FFF; }
+
+td.row, td.row1, td.row2, td.row3 { background-color: #FFF; }
+
+th, td.th { color: #F6F6F5; font-size: 12px; font-weight: bold; background-color: #4595D4; background-image: url('images/admin_bg_th.gif'); background-repeat: repeat-x; height: 25px; border-style: solid; border-color: #56A6E5; border-width: 0px 1px 0px 1px; }
+
+td.cat,td.catHead,td.catSides,td.catLeft,td.catRight,td.catBottom { color: #000; font-size: 11px; background-color: #5393C6; background-image: url('images/admin_bg_cat.gif'); background-repeat: repeat-x; height: 27px; padding: 1px; }
+
+.gen { font-size: 12px; }
+.genmed { font-size: 11px; }
+.gensmall { font-size: 10px; }
+
+
+.nav { font-weight: bold; font-size: 11px; color: #FF9C00;}
+.nav a, .nav a:visited { text-decoration: underline; color: #3B88C5; }
+.nav a:hover, .nav a:active { text-decoration: underline; color: #FF9C00; }
+
+table.nav { background-color: #F7F7F7; background-image: url('images/admin_bg_cat.gif'); border: solid 1px #4E9EDD; height: 25px; }
+table.nav:hover { border: solid 1px #3B88C5; }
+
+.forumlink { font-weight: bold; font-size: 12px; }
+a.forumlink, a.forumlink:visited { text-decoration: none; }
+a.forumlink:hover, a.forumlink:active { text-decoration: underline; }
+
+.forumlink_new { font-weight: bold; font-size: 12px; }
+a.forumlink_new, a.forumlink_new:visited { text-decoration: none; color: #F2A62E; }
+a.forumlink_new:hover, a.forumlink_new:active { text-decoration: underline; }
+
+.moderators { font-size: 10px; }
+.moderators a, .moderators a:visited { color: #A2A2A2; text-decoration: underline; }
+.moderators a:hover, .moderators a:active { color: #FF9C00; text-decoration: underline; } 
+
+input { text-indent: 2px; }
+input,textarea, select { color: #333; font: normal 11px Verdana, Arial, Helvetica, sans-serif; }
+input.post, textarea.post, select { background-color: #FFF; border: solid 1px #2C6B9D; }
+input.post { height: 17px; }
+
+input.button { background-color: #FFFFFF; color: #333333; font-size: 11px; font-family: Verdana, Arial, Helvetica, sans-serif;  border: solid 1px #2C6B9D; }
+
+input.mainoption { background-color: #FFFFFF; font-weight: bold;  border: solid 1px #2C6B9D; height: 17px; }
+input.liteoption { background-color: #FFFFFF; font-weight: normal;  border: solid 1px #2C6B9D; height: 17px; }
+
+select optgroup { background-color: #C3C7C9; color: #404040; }
+select option, select optgroup option { background-color: #FFF; color: #000; }
+
+.helpline { background-color: #FFF; border: solid 1px #FFF; color: #444; }
+
+.topiclink { font-weight: bold; font-size: 11px; }
+a.topiclink, a.topiclink:visited { text-decoration: none; }
+a.topiclink:hover, a.topiclink:active { text-decoration: underline; }
+
+.topiclink_new { font-weight: bold; font-size: 11px; }
+a.topiclink_new { text-decoration: none; color: #FF9C00; }
+a.topiclink_new:visited	{ text-decoration: none; color: #FF9C00; }
+a.topiclink_new:hover, a.topiclink_new:active { text-decoration: underline; }
+
+.postbody { font-size: 12px; color: #202020; }
+.postbody a, .postbody a:visited { text-decoration: underline; }
+.postbody a:hover, .postbody a:active { text-decoration: underline; }
+
+.signature { font-size: 12px; color: #404040; }
+
+.postdate { font-size: 10px; color: #646464; }
+
+.name { font-weight: bold; font-size: 11px; }
+.name a, .name a:visited { text-decoration: underline; }
+.name a:hover, a.name a:active { text-decoration: underline; }
+.postdetails { color: #646464; font-size: 9px; }
+
+
+table.quote { background-color: #C0C0C0; }
+td.quote_user { background-color: #F2F2F2; font-size: 11px; color: #555; background-image: url('images/admin_bg_cat.gif'); }
+td.quote { background-color: #FAFAFA; }
+
+table.code { background-color: #C0C0C0; }
+td.code_header { background-color: #F2F2F2; font-size: 11px; color: #555; background-image: url('images/admin_bg_cat.gif'); }
+td.code { background-color: #FFF; font-family: Courier, 'Courier New', sans-serif; font-size: 11px; color: #288B38; }
+
+
+.pagination { color: #666; font-weight: bold; margin: 0px; margin-top: 5px; margin-bottom: 3px; }
+.pagination a, .pagination a:visited { color: #000; border: #D4D7DA 1px solid; padding: 1px; background-color: #EAEBEB; }
+.pagination a:hover, .pagination a:active { color: #666; border: #EAECEF 1px solid; padding: 1px; background-color: #FFF; }
+
+.gotopage { margin: 0px; margin-top: 5px; margin-bottom: 1px; }
+.gotopage a, .gotopage a:visited { border: #DADCDF 1px solid; padding: 1px; background-color: #E9EDEE; }
+.gotopage a:hover, .gotopage a:active { border: #E5E8E9 1px solid; padding: 1px; background-color: #FFF; }
+
+
+td.spacerow { background-color: #F2F2F2; background-image: url('images/bg_th.gif'); height: 2px; padding: 0px; }
+
+.cattitle		{ font-weight: bold; font-size: 12px ; letter-spacing: 1px; color: #444; }
+a.cattitle		{ text-decoration: none; }
+a.cattitle:hover{ text-decoration: underline; }
+
+.maintitle,h1,h2	{
+			font-weight: bold; font-size: 22px; font-family: "Trebuchet MS",Verdana, Arial, Helvetica, sans-serif;
+			text-decoration: none; line-height : 120%; color : #000000;
+}
+

@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- generator="FeedCreator 1.7.2" -->
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://localhost">
+        <title>yoursite Goals</title>
+        <description>The latest uploaded player goals from yoursite!</description>
+        <link>http://localhostfiles/browseGoals.php</link>
+       <dc:date>2006-10-21T17:49:00+01:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=548"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=547"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=546"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=545"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=544"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=543"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=542"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=541"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=540"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=539"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=538"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=537"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=536"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=535"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=534"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=533"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=532"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=531"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=530"/>
+                <rdf:li rdf:resource="http://localhost/files/browseGoals.php?goal=529"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=548">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272494.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:01 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=548</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272494.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;x2&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:34+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=547">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272484.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:01 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=547</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272484.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;x1&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:24+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=546">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272473.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:01 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=546</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272473.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;Nistelrooytje&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:13+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=545">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272463.mpeg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:01 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=545</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272463.mpeg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;xXEvo-BorgXx_33.&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:03+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=544">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272449.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:00 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=544</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272449.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;whats wrong&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:49+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=543">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272438.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:00 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=543</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272438.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;this goal brings me to the next round&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:38+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=542">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272434.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:00 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=542</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272434.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;scholes power shot&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:34+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=541">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272418.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:00 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=541</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272418.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;saha lob&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:18+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=540">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272400.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 03:00 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=540</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272400.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;saha effect shot&lt;/p&gt;</description>
+        <dc:date>2006-04-29T01:04:00+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=539">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272391.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:59 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=539</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272391.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;rooney rules 2&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:51+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=538">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272381.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:59 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=538</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272381.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;martins huppaaa&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:41+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=537">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272372.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:59 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=537</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272372.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;its just adiano&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:32+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=536">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272360.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:59 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=536</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272360.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;is this hard enough&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:20+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=535">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272345.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:59 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=535</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272345.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;ik ben lob king&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:05+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=534">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272335.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:58 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=534</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272335.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;gilardino vs the-gunner&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:55+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=533">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272325.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:58 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=533</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272325.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;gilardino nice lob&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:45+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=532">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272312.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:58 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=532</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272312.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;classic dida action&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:32+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=531">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272303.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:58 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=531</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272303.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;amanatidis shot&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:23+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=530">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272294.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:58 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=530</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272294.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;526_1146272294&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:14+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/files/browseGoals.php?goal=529">
+        <dc:format>text/html</dc:format>
+        <dc:source>files/goals/526_1146272278.mpg</dc:source>
+        <dc:creator>Triple-G</dc:creator>
+        <title>Goal :: Triple-G  (04/29/2006 02:57 am)</title>
+        <link>http://localhost/files/browseGoals.php?goal=529</link>
+        <description>&lt;p&gt;Goal by &lt;b&gt;Triple-G&lt;/b&gt; - &lt;a href=files/goals/526_1146272278.mpg&gt;Download&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;img height=&quot;96&quot; width=&quot;128&quot; src=&quot;http://localhost/gfx/thumb_missing.gif&quot; border=&quot;1&quot;&gt;&lt;/p&gt;&lt;p&gt;adriano is power&lt;/p&gt;</description>
+        <dc:date>2006-04-29T00:04:58+01:00</dc:date>
+    </item>
+</rdf:RDF>

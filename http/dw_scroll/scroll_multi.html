@@ -1,0 +1,112 @@
+<html>
+<head>
+<title>Demo</title>
+<style type="text/css">
+div#scrollbar1, div#scrollbar2, div#scrollbar3 {
+    display:none; /* hide from incapable */
+    }
+</style>
+<script src="js/dw_event.js" type="text/javascript"></script>
+<script src="js/dw_scroll.js" type="text/javascript"></script>
+<script src="js/dw_scrollbar.js" type="text/javascript"></script>
+<script src="js/scroll_controls.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+function init_dw_Scroll() {
+    var wndo1 = new dw_scrollObj('wn1', 'lyr1');
+    wndo1.setUpScrollbar("dragBar1", "track1", "v", 1, 1);
+    wndo1.setUpScrollControls('scrollbar1');
+    
+    var wndo2 = new dw_scrollObj('wn2', 'lyr2', 'imgTbl');
+    wndo2.setUpScrollbar("dragBar2", "track2", "v", 1, 1);
+    wndo2.setUpScrollbar("dragBar3", "track3", "h", 1, 1);
+    wndo2.setUpScrollControls('scrollbar2');
+    wndo2.setUpScrollControls('scrollbar3');
+}
+
+// if code supported, link in the style sheet and call the init function onload
+if ( dw_scrollObj.isSupported() ) {
+    dw_writeStyleSheet('css/scroll_multi.css');
+    dw_Event.add( window, 'load', init_dw_Scroll);
+}
+
+</script>
+</head>
+<body>
+
+<!-- Table used for layout to keep the style sheet simple. 
+    See online presentation for use in CSS layout   -->
+
+<table border="0" cellpadding="4" cellspacing="0">
+ <tr>
+  <td><div id="wn1">
+    <div id="lyr1">
+    <p>The code can support an unlimited number of scroll areas. See documentation online</p>
+    
+    <p>Set up nested div's for each scroll area assigning a unique ID to each. Use these ID's for the style specifications for each scroll area. The elements containing the scroll controls and/or scrollbars also need unique ID's and style specifications set up.</p>
+
+    </div>
+</div></td>
+
+  <td><div id="scrollbar1"><!-- border attribute added to reduce support questions on the subject. 
+    If you like valid strict markup, remove and place a img {border:none;} spec in style sheet -->
+    <div id="up1"><a class="mouseover_up" href=""><img src="images/btn-up.gif" width="11" height="11" alt="" border="0" /></a></div>
+    <div id="track1">
+        <div id="dragBar1"></div>
+    </div>
+    <div id="down1"><a class="mouseover_down" href=""><img src="images/btn-dn.gif" width="11" height="11" alt="" border="0" /></a></div>
+</div></td>
+ </tr>
+</table>
+
+<p>&nbsp;</p>
+
+<table>
+ <tr>
+  <td><div id="wn2">
+    <div id="lyr2">
+      <table id="imgTbl" border="0" cellpadding="15" cellspacing="0">
+        <tr>
+        	<td><img src="images/demo/sunset.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/deco.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/cave-art.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/swans.gif" width="150" height="150" alt="" /></td>
+        </tr>
+        <tr>
+        	<td><img src="images/demo/astro.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/design1.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/mandala2.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/turtle.gif" width="150" height="150" alt="" /></td>
+        </tr>
+        <tr>
+        	<td><img src="images/demo/mex-sun.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/cranes.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/crystal.gif" width="150" height="150" alt="" /></td>
+        	<td><img src="images/demo/mandala1.gif" width="150" height="150" alt="" /></td>
+        </tr>
+      </table>
+    </div></div></td>
+    <td><div id="scrollbar2">
+    <div id="up2"><a class="mouseover_up" href=""><img src="images/btn-up.gif" width="11" height="11" alt="" border="0" /></a></div>
+    <div id="track2">
+      <div id="dragBar2"></div>
+    </div>
+    <div id="down2"><a class="mouseover_down" href=""><img src="images/btn-dn.gif" width="11" height="11" alt="" border="0" /></a></div>
+  </div></td>
+ </tr>
+  <tr>
+  <td><div id="scrollbar3">
+    <div id="left3"><a class="mouseover_left" href=""><img src="images/btn-lft.gif" width="11" height="11" alt="" border="0" /></a></div>
+    <div id="track3">
+      <div id="dragBar3"></div>
+    </div>
+
+    <div id="right3"><a class="mouseover_right" href=""><img src="images/btn-rt.gif" width="11" height="11" alt="" border="0" /></a></div>
+  </div></td><td></td>
+ </tr>
+</table>
+
+<p>Back to <a href="index.html">index</a></p>
+    
+</body>
+</html>

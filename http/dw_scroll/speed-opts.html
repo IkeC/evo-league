@@ -1,0 +1,122 @@
+<html>
+<head>
+<title>Demo</title>
+<style type="text/css">
+
+div#wn1	{ 
+	position:relative; 
+	width:180px; height:50px; 
+	overflow:hidden;	
+	}
+
+div#wn2	{ 
+	position:relative; 
+	width:180px; height:80px; 
+	overflow:hidden;	
+	}
+
+</style>
+<script type="text/javascript">
+// This example uses HTML event handler attributes, the functions for which are found in html_att_ev.js
+
+function init_dw_Scroll() {
+    // arguments: id of outer div, id of content div
+    // if horizontal scrolling, id of element containing scrolling content (table?)
+    var wndo1 = new dw_scrollObj('wn1', 'lyr1', 't1');
+    var wndo2 = new dw_scrollObj('wn2', 'lyr2');
+}
+
+</script>
+<script src="js/dw_event.js" type="text/javascript"></script>
+<script src="js/dw_scroll.js" type="text/javascript"></script>
+<script src="js/html_att_ev.js" type="text/javascript"></script>
+
+</head>
+<body onload="init_dw_Scroll()">
+
+<h1>Scroll-Speed Options in an Image Map</h1>
+
+<p>Different portions of the scroll images provide different speeds for scrolling.</p>
+
+
+<!-- Tables used for layout to keep the style sheet simple. 
+    See online presentation for use in CSS layout   -->
+
+<table border="0" cellpadding="4" cellspacing="0">
+ <tr>
+  <td><div id="wn1">
+  	<div id="lyr1">
+    <table id="t1" border="0" cellpadding="6" cellspacing="0">
+  	 <tr>
+  		<td><img src="images/demo/dwc-w-btn.gif" width="175" height="40" alt=""></td>
+  		<td><img src="images/demo/dot-com-btn.gif" width="176" height="30" alt=""></td>
+  		<td><img src="images/demo/slogan-btn.gif" width="132" height="32" alt=""></td>
+      <td><img src="images/demo/dwc-w-btn.gif" width="175" height="40" alt=""></td>
+  		<td><img src="images/demo/dot-com-btn.gif" width="176" height="30" alt=""></td>
+  		<td><img src="images/demo/slogan-btn.gif" width="132" height="32" alt=""></td>
+      <td><img src="images/demo/dwc-w-btn.gif" width="175" height="40" alt=""></td>
+  		<td><img src="images/demo/dot-com-btn.gif" width="176" height="30" alt=""></td>
+  		<td><img src="images/demo/slogan-btn.gif" width="132" height="32" alt=""></td>
+     </tr>
+    </table>
+    </div>
+  </div>  <!-- end wn div --></td>
+ </tr>
+ <tr>
+  <td><!-- Maps for both sets of controls at the end of the document  -->
+  <div id="controls">
+    <img src="images/map-lft.gif" width="50" height="14" alt="" border="0" usemap="#lftaro">
+    <img src="images/map-rt.gif" width="50" height="14" alt="" border="0" usemap="#rtaro">
+  </div></td>
+ </tr>
+</table>
+
+<p>&nbsp;</p>
+  
+<table border="0" cellpadding="4" cellspacing="0">
+ <tr>
+  <td><div id="wn2">
+    <div id="lyr2">
+      Image maps you create can be any size or shape you like. They can provide any number of speed options for mouseover scrolling. Image maps you create can be any size or shape you like. They can provide any number of speed options for mouseover scrolling. Image maps you create can be any size or shape you like. They can provide any number of speed options for mouseover scrolling. Image maps you create can be any size or shape you like. They can provide any number of speed options for mouseover scrolling. Image maps you create can be any size or shape you like. They can provide any number of speed options for mouseover scrolling. Image maps you create can be any size or shape you like. They can provide any number of speed options for mouseover scrolling. 
+    </div>  
+  </div></td>
+  <td><img src="images/map-up.gif" width="11" height="35" alt="" border="0" usemap="#uparo">
+  <br>
+  <img src="images/map-dn.gif" width="11" height="35" alt="" border="0" usemap="#dnaro">
+  </td>
+ </tr>
+</table>
+
+
+<p>Back to <a href="index.html">index</a></p>
+
+
+<!-- maps for scroll images -->
+<div>
+  <map name="lftaro">
+    <area alt="" coords="36,0,50,14" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn1','left', 100)" onmouseout="dw_scrollObj.stopScroll('wn1')">
+    <area alt="" coords="22,0,36,14" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn1','left', 250)" onmouseout="dw_scrollObj.stopScroll('wn1')">
+    <area alt="" coords="0,0,22,14" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn1','left', 400)" onmouseout="dw_scrollObj.stopScroll('wn1')">
+  </map>
+  
+  <map name="rtaro">
+    <area alt="" coords="36,0,50,14" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn1','right', 400)" onmouseout="dw_scrollObj.stopScroll('wn1')">
+    <area alt="" coords="22,0,36,14" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn1','right', 250)" onmouseout="dw_scrollObj.stopScroll('wn1')">
+    <area alt="" coords="0,0,22,14" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn1','right', 100)" onmouseout="dw_scrollObj.stopScroll('wn1')">
+  </map>
+  
+  <map name="uparo">
+    <area alt="" coords="0,22,11,35" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn2','up', 100)" onmouseout="dw_scrollObj.stopScroll('wn2')">
+    <area alt="" coords="0,13,11,23" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn2','up', 250)" onmouseout="dw_scrollObj.stopScroll('wn2')">
+    <area alt="" coords="0,0,11,15" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn2','up', 400)" onmouseout="dw_scrollObj.stopScroll('wn2')">
+  </map>
+  
+  <map name="dnaro">
+    <area alt="" coords="0,22,11,35" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn2','down', 400)" onmouseout="dw_scrollObj.stopScroll('wn2')">
+    <area alt="" coords="0,13,11,23" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn2','down', 250)" onmouseout="dw_scrollObj.stopScroll('wn2')">
+    <area alt="" coords="0,0,11,15" href="javascript://" onclick="return false" onmouseover="dw_scrollObj.initScroll('wn2','down', 100)" onmouseout="dw_scrollObj.stopScroll('wn2')">
+  </map>
+</div>
+
+</body>
+</html>

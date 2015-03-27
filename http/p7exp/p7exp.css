@@ -1,0 +1,192 @@
+/* 
+  ------------------------------------
+  PVII Menu CSS Express Drop-Down Menu
+  by Project Seven Development
+  www.projectseven.com
+  ------------------------------------
+*/
+
+/*
+Container for the menu. We set top and bottom borders only because the menu container
+stretches the entire window width. Note that this container can go inside a fixed width
+element that is centered on the page, if you so desire. It can even go inside a table cell.
+It carries a background image for aesthetics.
+*/
+
+#menuwrapper {
+  position: relative;
+  z-index:2;
+}
+
+/*Clears the floated menu items.
+Assigned to a BR tag placed just before
+menuwrapper's closing DIV tag*/
+.clearit {
+	clear: both;
+	height: 0;
+	line-height: 0.0;
+	font-size: 0;
+}
+/*
+p7menubar is the root UL and p7menubar ul applies to all the sub-menu ULs.
+We set padding and margin to zero to eliminate all indentation, turn bullets off,
+and set a font-family different from the global font-family declared for the
+body element above. This sets font for just the menu. Do not add a font-size here.
+*/
+#p7menubar, #p7menubar ul {
+	
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+/*
+Root-Level Links.  Do not change the first two properties.
+Adjust padding values to make the root links taller and to offset them
+from the left and right edges of the link box. The border right creates a
+separator between links. Font-size is set here and will apply to all menu levels.
+Font color is set to light gray.
+*/
+#p7menubar a {
+	display: block;
+	text-decoration: none;
+	padding: 0 5 0 5; 
+}
+
+/*
+Class assigned to those Root-Level links that have associated Sub-Menus.
+The top and bottom padding assigned this element must be the same as
+that assigned to the p7menubar a element. The right padding is increased
+to accomodate the display of background image depicting a downward
+pointing arrow.
+*/
+#p7menubar a.trigger {
+
+}
+
+/*
+The Root-Level list items. Floating left allows
+them to appear horizontally. Width is for IE5 Mac. The last rule in
+this style sheet will set the width for this element to auto for all
+other browsers - hiding it from IE5 Mac. The width is proportional.
+As you add and edit root menu items, you will need to test this width
+to ensure it is wide enough to accomodate all text.
+*/
+#p7menubar li {
+	float: left;
+  white-space: nowrap;
+}
+
+#p7bullet {
+	background:url(/style/MorpheusX/images/darkblue/buttons_spacer.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0 ;	
+	padding: 0 1 0 13;
+	margin: 0;	
+}
+
+#p7nobullet {
+	background-repeat: no-repeat;
+	background-position: 0 0 ;	
+	padding: 0 3 0 10;
+	margin: 0;	
+}
+
+#p7lastbullet {
+	background:url(/style/MorpheusX/images/darkblue/buttons_spacer.gif);
+	background-repeat: no-repeat;
+	background-position: 0 0 ;	
+	padding: 0 13 0 15;
+	margin: 0;	
+}
+
+
+/*
+Sets width for Sub-Menu box and the List Items inside - in proportional em units. 
+This allows the sub-menu width to expand if users resize the text in their browsers.
+*/
+#p7menubar li ul, #p7menubar ul li  {
+	list-style-image: none;
+	width: 15em;
+  opacity: 0.96;
+}
+/*
+The sub-menu links. We set color and turn off the right border, which
+would otherwise be inherited from the root link rule. We set top and 
+bottom padding less than the root items and increase the left padding
+to indent the sub-menu links a small amount in from the root links.
+*/
+#p7menubar ul li a  {
+	list-style-type:none;
+	color: #565656;
+	border-right: 0;
+	padding: 3 8 3 7;
+}
+/*
+Sub-Menu Unordered Lists describes each dropdown sub-menu grouping. 
+Positioned Absolutely to allow them to appear below their root trigger.
+Set to display none to hide them until trigger is moused over.
+Background Color must be set or problems will be encountered in MSIE.
+Right and bottom borders are set to simulate a raised look.
+A gradient background image is assigned.
+*/
+#p7menubar li ul {
+	position: absolute;
+	display: none;
+	background-color: #FFFFFF;
+	border-left: 1px solid #3B6AC5;
+	border-top: 1px solid #3B6AC5;
+	border-right: 1px solid #3B6AC5;
+	border-bottom: 1px solid #3B6AC5;
+	
+}
+/*
+Changes the Text color and background color when the Root-Level
+menu items are moused over. The second selector sets color and background
+when Root-Level items are accessed with the keyboard tab key. The third
+selector sets an active state to support keyboard access in MSIE. The fourth 
+selector is assigned to IE5 and IE6 Windows via the P7_ExpMenu script.
+Note that IE7 supports hover on elements other than links and so behaves
+like Firefox, Opera, and Safari - making the menu operable even if JavaScript
+is not enabled.
+*/
+#p7menubar li:hover a, #p7menubar a:focus,
+#p7menubar a:active, #p7menubar li.p7hvr a {
+	color: #e39000;
+  opacity: 1;
+}
+
+/*
+Set the Sub-Menu UL to be visible when its associated
+Root-Level link is moused over. The second selector is 
+assigned to IE5 and IE6 via the P7_ExpMenu script.
+*/
+#p7menubar li:hover ul, #p7menubar li.p7hvr ul {
+	display: block;
+}
+/*
+Sets the Text color of the Sub-Level links when the Root-Level
+menu items are moused over. The second selector is 
+assigned to IE5 and IE6 via the P7_ExpMenu script.
+The color set should march the normal Sub-Level link color
+in the rule: #p7menubar ul li a. The background color must be
+transparent to allow the underlying gradient background on the UL
+to show through.
+*/
+#p7menubar li:hover ul a, #p7menubar li.p7hvr ul a {
+	color: #3B6AC5;
+	background-color: transparent;
+}
+/*
+The normal hover class for Sub-Level links. The Important directive
+is required for older browsers. We set a background color, which shows
+over the gradient background. We set text color to white.
+*/
+#p7menubar ul a:hover {
+	background-color: #E0E0E0!important;
+	color: #e39000!important;
+}
+/* The single backslash \ character inside this comment
+causes IE5 Mac to ignore the following rule, which allows other
+browsers to render top-level menu items to their natural width.
+Do not edit this rule in any way. */
+#p7menubar li {width: auto;}

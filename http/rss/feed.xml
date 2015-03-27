@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- generator="FeedCreator 1.7.2" -->
+<rdf:RDF
+    xmlns="http://purl.org/rss/1.0/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel rdf:about="http://localhost">
+        <title>yoursite News</title>
+        <description>The latest info from yoursite!</description>
+        <link>http://localhost</link>
+       <dc:date>2006-10-21T17:56:44+01:00</dc:date>
+        <items>
+            <rdf:Seq>
+                <rdf:li rdf:resource="http://localhost/news.php"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70756"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70755"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70754"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70753"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70752"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70751"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70750"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70749"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70748"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70747"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70746"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70745"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70744"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70743"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70742"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70741"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70740"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70739"/>
+                <rdf:li rdf:resource="http://localhost/games.php#70738"/>
+            </rdf:Seq>
+        </items>
+    </channel>
+    <item rdf:about="http://localhost/news.php">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>News :: ECL, SC and GOTS</title>
+        <link>http://localhost/news.php</link>
+        <description>The &lt;a href=&quot;http://www.yoursite/leagues/ecl.php&quot;&gt;European Club League&lt;/a&gt; is now entering its final phase, and many players still have the chance to win this title. Please make sure you get &lt;b&gt;all&lt;/b&gt; your games played until &lt;b&gt;September 25th&lt;/b&gt;. Players with less than 20 games should get playing asap if they want to keep their team.&lt;br /&gt;
+&lt;br /&gt;
+Things are also heating up in the &lt;a href=&quot;http://www.yoursite/tournaments.php?cup=sc2006&quot;&gt;Summer Challenge '06&lt;/a&gt; with &lt;a href=&quot;/profile.php?name=Atol&quot;&gt;Atol&lt;/a&gt; to meet either &lt;a href=&quot;/profile.php?name=sheepshagger&quot;&gt;sheepshagger&lt;/a&gt; or &lt;a href=&quot;/profile.php?name=gecko14&quot;&gt;gecko14&lt;/a&gt; in the final. Will gecko14 walk away with his first tournament title after three ladder wins? &lt;br /&gt;
+&lt;br /&gt;
+Finally, you have decided that &lt;a href=&quot;/profile.php?name=cycobbs&quot;&gt;cycobbs&lt;/a&gt; has won the &lt;a href=&quot;http://www.yoursite/forum/viewtopic.php?t=3291&quot;&gt;Season 18 GOTS Competition&lt;/a&gt; with this beautiful &lt;a href=&quot;http://www.yoursite/files/goals/cycobbs_berkgamp.avi&quot;&gt;Henry/Bergkamp combination&lt;/a&gt;. Well done!</description>
+        <dc:date>2006-10-21T15:10:44+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70756">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: sheepshagger  6 - 0  robbi23</title>
+        <link>http://localhost/games.php#70756</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 11:58 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;sheepshagger's team: Chelsea (won 8 points)&lt;br /&gt;robbi23's team: Arsenal (lost 0 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;sheepshagger's comment: &lt;br /&gt;gg&lt;/p&gt;</description>
+        <dc:date>2006-09-22T21:09:49+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70755">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: sheepshagger  3 - 1  robbi23</title>
+        <link>http://localhost/games.php#70755</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 11:58 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;sheepshagger's team: AC Milan (won 8 points)&lt;br /&gt;robbi23's team: Arsenal (lost 0 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;sheepshagger's comment: &lt;br /&gt;gg&lt;/p&gt;</description>
+        <dc:date>2006-09-22T21:09:28+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70754">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Triple-G  4 - 0  Tonn</title>
+        <link>http://localhost/games.php#70754</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 11:32 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Triple-G's team: Manchester United (won 3 points)&lt;br /&gt;Tonn's team: Olympique Lyon (lost 55 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Triple-G's comment: &lt;br /&gt;Gutes spiel mit eine gutes spieler. Danke schon kamerad.&lt;/p&gt;</description>
+        <dc:date>2006-09-22T21:09:33+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70753">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Triple-G  3 - 1  Tonn</title>
+        <link>http://localhost/games.php#70753</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 11:32 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Triple-G's team: Manchester United (won 4 points)&lt;br /&gt;Tonn's team: FC Barcelona (lost 60 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Triple-G's comment: &lt;br /&gt;Gutes spiel mit eine gutes spieler. Danke schon kamerad.&lt;/p&gt;</description>
+        <dc:date>2006-09-22T21:09:12+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70752">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: cycobbs  5 - 2  robbi23</title>
+        <link>http://localhost/games.php#70752</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 11:11 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;cycobbs's team: Arsenal (won 10 points)&lt;br /&gt;robbi23's team: Manchester United (lost 0 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;cycobbs's comment: &lt;br /&gt;Sponsored by Konami with 2 fake pks for me. sorry man&lt;/p&gt;</description>
+        <dc:date>2006-09-22T21:09:19+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70751">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: cycobbs  4 - 0  robbi23</title>
+        <link>http://localhost/games.php#70751</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 11:10 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;cycobbs's team: Arsenal (won 10 points)&lt;br /&gt;robbi23's team: Manchester United (lost 0 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;cycobbs's comment: &lt;br /&gt;Another good game (only 10 players for him during the biggest part f the game)&lt;/p&gt;</description>
+        <dc:date>2006-09-22T21:09:43+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70750">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: cycobbs  3 - 0  robbi23</title>
+        <link>http://localhost/games.php#70750</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 11:10 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;cycobbs's team: Arsenal (won 10 points)&lt;br /&gt;robbi23's team: Manchester United (lost 0 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;cycobbs's comment: &lt;br /&gt;A good game with a fair player&lt;/p&gt;</description>
+        <dc:date>2006-09-22T21:09:08+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70749">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Executer99  2 - 0  Tonn</title>
+        <link>http://localhost/games.php#70749</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 10:46 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Executer99's team: FC Barcelona (won 23 points)&lt;br /&gt;Tonn's team: Manchester United (lost 41 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Executer99's comment: &lt;br /&gt;Fantastic one!!! Maxi Lopez enter in extra time to solv game with 2 goals.
+Fantastic this Argentine Kidd. Great game again, a fine oponnent.&lt;/p&gt;</description>
+        <dc:date>2006-09-22T20:09:00+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70748">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Executer99  1 - 0  Tonn</title>
+        <link>http://localhost/games.php#70748</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 10:44 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Executer99's team: FC Barcelona (won 27 points)&lt;br /&gt;Tonn's team: Manchester United (lost 37 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Executer99's comment: &lt;br /&gt;great game with a simgle goal near the end of game. Some luck to me, sorry mate&lt;/p&gt;</description>
+        <dc:date>2006-09-22T20:09:55+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70747">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: the-gunner  2 - 0  cycobbs</title>
+        <link>http://localhost/games.php#70747</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 09:37 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;the-gunner's team: AC Milan (won 45 points)&lt;br /&gt;cycobbs's team: Arsenal (lost 19 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;the-gunner's comment: &lt;br /&gt;great games!! thx m8&lt;/p&gt;</description>
+        <dc:date>2006-09-22T19:09:05+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70746">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: cycobbs  3 - 1  the-gunner</title>
+        <link>http://localhost/games.php#70746</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 09:33 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;cycobbs's team: Arsenal (won 23 points)&lt;br /&gt;the-gunner's team: AC Milan (lost 41 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;cycobbs's comment: &lt;br /&gt;Good game. Actually, 3 very nice games. thanks&lt;/p&gt;</description>
+        <dc:date>2006-09-22T19:09:00+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70745">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: the-gunner  3 - 1  SYTCH</title>
+        <link>http://localhost/games.php#70745</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 08:27 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;the-gunner's team: AC Milan (won 18 points)&lt;br /&gt;SYTCH's team: Arsenal (lost 13 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;the-gunner's comment: &lt;br /&gt;another good game, second goal was silly but third was very good... nice!&lt;/p&gt;</description>
+        <dc:date>2006-09-22T18:09:20+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70744">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: the-gunner  1 - 0  SYTCH</title>
+        <link>http://localhost/games.php#70744</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 08:26 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;the-gunner's team: AC Milan (won 21 points)&lt;br /&gt;SYTCH's team: Arsenal (lost 43 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;the-gunner's comment: &lt;br /&gt;good game of milan.. they were strong and gave nuthing away!&lt;/p&gt;</description>
+        <dc:date>2006-09-22T18:09:47+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70743">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: SYTCH  3 - 2  sheepshagger</title>
+        <link>http://localhost/games.php#70743</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 07:53 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;SYTCH's team: Manchester United (won 56 points)&lt;br /&gt;sheepshagger's team: FC Barcelona (lost 8 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;SYTCH's comment: &lt;br /&gt;hmmm he was r correct but the game was decided in the first 10 mins with two
+headed goals from van asists by ronaldo. pretty boring but i just coulnt break
+him down thr the middle.  he hit bak really well almost tied it.&lt;br /&gt;
+&lt;/p&gt;</description>
+        <dc:date>2006-09-22T17:09:11+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70742">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: sheepshagger  2 - 0  SYTCH</title>
+        <link>http://localhost/games.php#70742</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 07:50 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;sheepshagger's team: Manchester United (won 9 points)&lt;br /&gt;SYTCH's team: Arsenal (lost 19 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;sheepshagger's comment: &lt;br /&gt;1 game was  good pretty much chances  for both teams..  2game sytch played verry
+boring  an only used winger  cross an a header . not 1 shoot to the goal in that
+game an he scored 3 times so  that game was realy boring ...&lt;/p&gt;</description>
+        <dc:date>2006-09-22T17:09:20+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70741">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: gooner1  2 - 1  PSD80</title>
+        <link>http://localhost/games.php#70741</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 05:40 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;gooner1's team: Argentina (won 20 points)&lt;br /&gt;PSD80's team: Portugal (lost 0 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;gooner1's comment: &lt;br /&gt;GG iwas a bit lucky in this one but scored a class winner&lt;br /&gt;
+&lt;/p&gt;</description>
+        <dc:date>2006-09-22T15:09:01+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70740">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Bentley  2 - 1  prozac</title>
+        <link>http://localhost/games.php#70740</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 03:06 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Bentley's team: Manchester United (won 6 points)&lt;br /&gt;prozac's team: AC Milan (lost 0 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Bentley's comment: &lt;br /&gt;gg&lt;/p&gt;</description>
+        <dc:date>2006-09-22T13:09:58+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70739">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Bentley  1 - 0  prozac</title>
+        <link>http://localhost/games.php#70739</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 03:06 pm&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Bentley's team: Manchester United (won 8 points)&lt;br /&gt;prozac's team: AC Milan (lost 53 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Bentley's comment: &lt;br /&gt;gg&lt;/p&gt;</description>
+        <dc:date>2006-09-22T13:09:51+01:00</dc:date>
+    </item>
+    <item rdf:about="http://localhost/games.php#70738">
+        <dc:format>text/html</dc:format>
+        <dc:source>http://www.yoursite</dc:source>
+        <dc:creator>Ike</dc:creator>
+        <title>Game :: Executer99  4 - 0  gooner1</title>
+        <link>http://localhost/games.php#70738</link>
+        <description>&lt;p&gt;Game played: 09/22/2006 01:40 am&lt;br /&gt;Ladder: PES5&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Executer99's team: FC Barcelona (won 31 points)&lt;br /&gt;gooner1's team: Arsenal (lost 33 points)&lt;/p&gt;&lt;br /&gt;---&lt;br /&gt;&lt;p&gt;Executer99's comment: &lt;br /&gt;great game. Ronaldinho was &amp;quot;on fire&amp;quot; with 2 fantastic goals.&lt;/p&gt;</description>
+        <dc:date>2006-09-21T23:09:10+01:00</dc:date>
+    </item>
+</rdf:RDF>

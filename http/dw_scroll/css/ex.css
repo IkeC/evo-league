@@ -1,0 +1,10 @@
+/* styles included for some demos but not related to functionality */
+
+body { font: 14px/1.3 verdana, arial, helvetica, sans-serif; }
+h1 { font-size:1.3em; }
+h2 { font-size:1.2em; }
+a:link { color:#33c; }    
+a:visited { color:#339; }
+ul { margin-bottom: 2.4em; }
+ul li { margin-bottom:.5em; }
+#index p { max-width: 60em; }

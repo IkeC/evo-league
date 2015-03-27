@@ -1,0 +1,88 @@
+Name: Fiveserver Configuration File
+Version: 1.8
+
+Comment: |
+    NOTE that GamePorts should not be changed, because the corresponding
+    games have those values hardcoded into them.
+
+ServerIP: auto
+ListenOn: ""
+IpDetectUri: "http://mapote.com/cgi-bin/ip.py"
+
+Lobbies:
+    - Europe
+    - Africa
+    - South America
+    - Asia
+    - Other
+    - Community POV6
+    - name: Roster Mismatch OK
+      checkRosterHash: 0
+    - name: Training
+      type: noStats
+
+GamePorts:
+    pes6: 10881
+    #we2007: 10881
+
+NetworkServer:
+    mainService: 20200
+    networkMenuService: 20201
+    loginService:
+        pes6: 20202
+        we2007: 20203
+
+WebInterface:
+    port: 8190
+
+Debug:
+    false
+
+DB:
+    name: evo
+    user: evo
+    password: 3bxTE3u9SAHPxxjz
+    readServers: [localhost]
+    writeServers: [localhost]
+    sharePool: True
+    ConnectionPool:
+        minConnections: 3
+        maxConnections: 12
+        keepAliveInterval: 60
+
+BannedList: banned6.yaml
+
+Roster:
+    enforceHash: false
+    compareHash: true
+
+ComputeRanksInterval:
+    days: 0
+    seconds: 360
+
+StoreSettings: true
+
+ShowStats: true
+
+#Disconnects:
+#    CountAsLoss:
+#        Enabled: false
+#        Score:
+#            player: 0
+#            opponent: 3
+
+ServerName: "evo-league.com"
+
+Greeting:
+    "text": "\
+Welcome to PES6 sixserver\n\
+on evo-league.com!\n\
+\n\
+Have fun, play fair and never disconnect!\n\
+Please report issues on our forums.\n\
+\n\
+Many thanks to reddwarf and juce,\n\
+without you we wouldn't be here!\n\
+\n\
+- Ike"
+

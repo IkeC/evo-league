@@ -1,0 +1,146 @@
+/*
+Copyright &copy; 2008 Pippa http://www.spacegirlpippa.co.uk
+Contact: sthlm.pippa@gmail.com
+
+This file is part of wTag mini chat - shoutbox.
+
+wTag is free software: you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+wTag is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with wTag.  If not, see <http://www.gnu.org/licenses/>.
+*/
+
+
+/* main-style.css is the main stylesheet for wTag.
+Several display bugs in IE are fixed in ie-style.css,
+and a few display bugs in Opera are fixed at the end of this file
+*/
+
+/* #box is the main div of the shoutbox layout.
+You can find the css code creating rounded corners for Mozilla
+inside the minichat.php file.
+You can remove the #box div completely from the shoutbox html code
+if you wish to redesign the layout.
+*/
+
+/* #chat div is nested inside the #box div and
+containing all other divs of the shoutbox layout */
+#chat {
+	position: relative;
+	top: 6px;
+	width: 97%;
+	height: 220px;
+	left: 4px;
+	height: 191px; /* 226px; */
+	border: 1px solid #ccc;
+	background-color: transparent;
+	z-index:95;
+}
+
+/* Messages area div */
+#container {
+	position: absolute;
+	top: 1px;
+	right: 0px;
+	margin-right: 0px;
+	width: 100%;
+	height: 191px;
+	background-color: transparent;
+	overflow: hidden;
+}
+
+/* Scroll bar */
+#scrollArea {
+	position: absolute;
+	right:3px;
+	top: 3px;
+	height: 185px;
+	width: 10px;
+	overflow: hidden;
+	background-color: #ffffff;
+	z-index:96;
+}
+
+/* Scroller */
+#scroller {
+	position: absolute;
+	top: -1px;
+	width: 8px;
+	background-color: #89A5DC;
+	right:-1px;
+}
+
+/* Content div */
+#content {
+	font-size: 11px;
+  position: relative;
+	padding-top:0px;
+	width: 97%;
+	height:770x;
+	left: 0px;
+	background-color: transparent;
+}
+
+/* Message text */
+#content .text {
+	font-size: 11px;
+	color: #444444;
+	margin-left: 4px;
+}
+
+#chat_menu {
+	position: absolute;
+	top:206px;
+	left: 0px;
+	margin-top: 0px;
+	height: 20px;
+	width: 280px;
+	font-size: 11px;
+	color: #ccc;
+	background-color: #eee;
+}
+
+
+/* Position smiley images */
+.smileys {margin-top:8px;}
+
+/* Refresh button */
+.buttondiv {
+	float: right;
+	height:18px;
+	width: 15%;
+	font-size: 8px;
+	background-color: #eee;
+	border-left:1px dotted #ccc;
+	border-right: 0px;
+	text-align:center;
+	cursor:pointer;
+}
+
+.buttondiv p {
+	margin-top:1px;
+	color: #3B6AC5;
+	text-decoration:none;
+	background-color: #eee;
+}
+
+.buttondiv p:hover {
+	color: #E39000;
+	background-color: #eee;
+	cursor:pointer;
+}
+
+ #subtext {
+ 	position: absolute;
+	top:200; 
+	left: 0px;
+ }
+
