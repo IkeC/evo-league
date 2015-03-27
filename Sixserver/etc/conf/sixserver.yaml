@@ -40,8 +40,8 @@ Debug:
 
 DB:
     name: evo
-    user: evo
-    password: 3bxTE3u9SAHPxxjz
+    user: changeme
+    password: changeme
     readServers: [localhost]
     writeServers: [localhost]
     sharePool: True
