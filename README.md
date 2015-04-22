@@ -33,7 +33,6 @@ You'll need at least a virtual server to run this. I recommend a Linux-based ser
 To run Sixserver properly, I recommend a server with at least 1GB RAM.
 
 
-
 ## Installation
 
 a) Create an empty database (eg. 'evo') and import the setup script (/setup/dbinit.sql).
@@ -86,7 +85,9 @@ All code written by me is covered by the MIT license, which means you can basica
 
 ## Support
 
-Please visit http://www.facebook.com/evoleague if you need help or if you have specific questions. I'm quite busy so I can't promise you'll get an immediate answer.
+Please open an issue at https://github.com/IkeC/evo-league/issues if you have a questions or problems. Please include as much information as you can, eg. server log files, system, component versions and so on.
+
+Note that I probably can't or won't help with issues such as how to run a webserver, install PHP or similar basic tasks. Google is your friend.
 
 
 ## Thanks
