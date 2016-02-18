@@ -22,7 +22,7 @@ PID=/opt/sixserver/sixserver.pid
 case "$1" in
     run)
         echo "sixserver run..."
-		FSENV}/bin/twistd -noy $TAC
+		${FSENV}/bin/twistd -noy $TAC
         ;;
     start)
         echo "sixserver start..."
