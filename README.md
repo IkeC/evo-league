@@ -6,7 +6,7 @@ a) A PHP-based ladder system where you can report wins against another player
 
 b) A Python-based online server for Pro Evolution Soccer 6 ("Sixserver")
 
-The evo-league.com website was hacked in late 2014 and all content was deleted. The guys stealing my code now run the website PESGate.com. It's not fair that thieves can run my code and others can't, so I'm sharing my work with everyone.
+The evo-league.com website was hacked in late 2014 and all content was deleted. The guys stealing my code started running a website which is now defunct. It's not fair that thieves can run my code and others can't, so I'm sharing my work with everyone.
 
 Please be aware that the code here may be vulnerable and you're running it **at your own risk**. If you find security issues, please commit your fixes to the project.
 
@@ -85,9 +85,7 @@ All code written by me is covered by the MIT license, which means you can basica
 
 ## Support
 
-Please open an issue at https://github.com/IkeC/evo-league/issues if you have a questions or problems. Please include as much information as you can, eg. server log files, system, component versions and so on.
-
-Note that I probably can't or won't help with issues such as how to run a webserver, install PHP or similar basic tasks. Google is your friend.
+You may open an issue at https://github.com/IkeC/evo-league/issues if you have a questions or problems. Please include as much information as you can, eg. server log files, system, component versions and so on. Please note that I probably can't or won't help with issues such as how to run a webserver, install PHP or similar tasks.
 
 
 ## Thanks
@@ -99,4 +97,4 @@ Many thanks to:
 * Vjacheslav Trushkin (cyberalien) for the phpbb Morpheus skin
 * All administrators, moderators and players developing the site over the years
 
-*Ike &copy; 2015*
+*IkeC &copy; 2015*
