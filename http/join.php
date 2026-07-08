@@ -232,7 +232,9 @@ if ($false) {
         else {
           $pwdHash = password_hash($passworddb, PASSWORD_DEFAULT);
           $similarAccounts = CheckSimilarAccounts($ip, $name, $pwdHash, $mail);
-          // $similarAccounts = "";
+          // Restriccion "una cuenta por IP" DESACTIVADA: se permite multiples
+          // cuentas por IP/email. La unicidad del nombre se valida mas abajo.
+          $similarAccounts = "";
           if (strlen($similarAccounts) > 0 && $cookie_name != 'Ike') {
             echo '<p>It appears you already have at least one account here. <b>You may not sign up for more than one account per IP.</b></p>';
             echo '<p>If you have more than one player in your home, create another in-game profile.</p>';
@@ -259,16 +261,12 @@ if ($false) {
               
               $hash5 = mysql_real_escape_string($_POST["hash5"]);
               if (!empty($serial5)) {
-                $result = array();
-                $res5 = exec("/opt/sixserver/sixserver-env/bin/python2.6 /opt/sixserver/lib/fiveserver/gethash.py ".$hash5, $result);
-                $hash5 = $result[0];
+                $hash5 = evo_gethash($_POST["hash5"]);
               }
-              
+
               $hash6 = mysql_real_escape_string($_POST["hash6"]);
               if (!empty($serial6)) {
-                $result = array();
-                $res6 = exec("/opt/sixserver/sixserver-env/bin/python2.6 /opt/sixserver/lib/fiveserver/gethash.py ".$hash6, $result);
-                $hash6 = $result[0];
+                $hash6 = evo_gethash($_POST["hash6"]);
               }
 
               if (!empty($_FILES['picture']['size'])) {

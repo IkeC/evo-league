@@ -4,6 +4,31 @@
 // this contains all commonly used functions
 
 /************************************************************************
+/   evo_gethash($md5hex)                                                /
+/   Calcula el hash5/hash6 (Blowfish-ECB del MD5 con la clave del       /
+/   servidor). Reemplaza la antigua llamada externa a gethash.py, que   /
+/   dependia del entorno Python del sixserver; con contenedores         /
+/   separados ese exec fallaba y el hash quedaba vacio.                 /
+/   Recibe el MD5 en hex (32 chars) que calcula js/md5.js y devuelve    /
+/   32 chars hex, identico a lo que producia gethash.py.                /
+/   Verificacion: evo_gethash("c9bfba2cb510247c7fce25a67d23ac9b")       /
+/                 == "1dd562bc83e2748511e1d8cec4d27094"                 /
+/************************************************************************/
+function evo_gethash($md5hex) {
+    $md5hex = trim($md5hex);
+    if (strlen($md5hex) !== 32 || !ctype_xdigit($md5hex)) {
+        return '';
+    }
+    $cipherkey = pack('H*',
+        '27501fd04e6b82c831024dac5c6305221974deb9388a2190' .
+        '1d576cbbe2f377ef23d75486010f37819afe6c321a0146d2' .
+        '1544ec365bf7289a');
+    $data = pack('H*', $md5hex);   // 16 bytes (2 bloques Blowfish de 8)
+    $enc  = mcrypt_encrypt(MCRYPT_BLOWFISH, $cipherkey, $data, MCRYPT_MODE_ECB);
+    return bin2hex($enc);
+}
+
+/************************************************************************
 /  	SmileyConvert($content,$directory)									/
 /	Convert smileys in a message										/
 /	Command :															/
@@ -524,7 +549,7 @@ function calculateGamePointsReportGame(
 	} else if ($ra2oldwinnerAvg <= $ra2oldloserAvg) {
 		$ra2newwinneradd = getLadderPointsBetterLost($ra2oldloserAvg, $ra2oldwinnerAvg); 
 		$ra2newloserrem = getLadderPointsBetterLost($ra2oldwinnerAvg, $ra2oldloserAvg);
-	} 
+	} 
 	
 	if ($type == "2on1") {
 		$penalty = round($ra2newwinneradd*$doublePenalty);

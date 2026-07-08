@@ -15,6 +15,14 @@ RUN apt-get update && \
 # ── Instalar extensiones PHP ──────────────────────────────────────────────────
 RUN docker-php-ext-install mysql mysqli
 
+# ── Extension mcrypt: Blowfish para el calculo de hash5/hash6 en PHP ─────────
+#    Reemplaza la antigua llamada externa a gethash.py (Python del sixserver).
+#    libmcrypt es minimo; ver funcion evo_gethash() en http/functions.php.
+RUN apt-get update && \
+    apt-get install -y --allow-unauthenticated libmcrypt-dev && \
+    rm -rf /var/lib/apt/lists/* && \
+    docker-php-ext-install mcrypt
+
 # ── Copiar php.ini personalizado (timezone + error reporting) ────────────────
 COPY php.ini /usr/local/etc/php/php.ini
 
