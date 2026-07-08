@@ -1,12 +1,12 @@
 #!/usr/bin/php
 
 <?php
-require('/var/www/yoursite/http/variables.php');
-require('/var/www/yoursite/http/variablesdb.php');
-require_once('/var/www/yoursite/http/functions.php');
-require ('/var/www/yoursite/http/log/KLogger.php');
+require('/var/www/html/variables.php');
+require('/var/www/html/variablesdb.php');
+require_once('/var/www/html/functions.php');
+require ('/var/www/html/log/KLogger.php');
 
-$log = new KLogger('/var/www/yoursite/http/log/report/', KLogger::INFO);	
+$log = new KLogger('/var/www/html/log/report/', KLogger::INFO);	
 
 if ($maintenance == 'yes') {
 	$log->logInfo('maintenance=yes, not reporting anything');

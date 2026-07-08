@@ -1,0 +1,14 @@
+# Cron jobs para evo-league PES6
+# m  h   dom mon dow  user     command
+
+# ── Site ────────────────────────────────────────────────────────────────────
+40  *   * * *   root   nice /usr/bin/php /var/www/cron/updateTeamladder.php > /dev/null 2>&1
+59 23   * * *   root   /var/www/cron/last-day-of-month.sh && /usr/bin/php /var/www/cron/newLadderSeason.php > /dev/null 2>&1
+
+# ── Sixserver ────────────────────────────────────────────────────────────────
+*/3 *   * * *   root   nice /usr/bin/php /var/www/cron/setDisconnectsInGames.php > /dev/null 2>&1
+*/5 *   * * *   root   nice /usr/bin/php /var/www/cron/setDisconnects.php > /dev/null 2>&1
+*/7 *   * * *   root   nice /usr/bin/php /var/www/cron/setWordBans.php > /dev/null 2>&1
+*/2 *   * * *   root   nice /usr/bin/php /var/www/cron/reportSixToLadder.php > /dev/null 2>&1
+35 23   * * *   root   /var/www/cron/last-day-of-month.sh && /var/www/cron/maintenance.sh
+58 23   * * *   root   /var/www/cron/last-day-of-month.sh && /usr/bin/php /var/www/cron/newSixserverSeason.php > /dev/null 2>&1

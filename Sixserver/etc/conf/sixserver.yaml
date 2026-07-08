@@ -42,8 +42,8 @@ DB:
     name: evo
     user: changeme
     password: changeme
-    readServers: [localhost]
-    writeServers: [localhost]
+    readServers: [db]
+    writeServers: [db]
     sharePool: True
     ConnectionPool:
         minConnections: 3

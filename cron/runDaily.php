@@ -1,10 +1,10 @@
 #!/usr/bin/php
 <?php
-require('/var/www/yoursite/http/variables.php');
-require('/var/www/yoursite/http/variablesdb.php');
-require_once('/var/www/yoursite/cron/functions.php');
-require ('/var/www/yoursite/http/log/KLogger.php');
-$log = new KLogger('/var/www/yoursite/http/log/cron/', KLogger::INFO);
+require('/var/www/html/variables.php');
+require('/var/www/html/variablesdb.php');
+require_once('/var/www/cron/functions.php');
+require ('/var/www/html/log/KLogger.php');
+$log = new KLogger('/var/www/html/log/cron/', KLogger::INFO);
 
 // PES
 
@@ -153,7 +153,7 @@ if ($count_total > 0) {
 
 // prune unused
 
-// require('/var/www/yoursite/cron/pruneUnused.php');
+// require('/var/www/cron/pruneUnused.php');
 
 // expire signup links
 
@@ -268,8 +268,8 @@ if (!empty($checkPointsRes)) {
 	sendAdminMail($adminSubject, $checkPointsRes);
 }
 
-require('/var/www/yoursite/http/fifa/variables.php');
-require('/var/www/yoursite/http/fifa/variablesdb.php');
+require('/var/www/html/fifa/variables.php');
+require('/var/www/html/fifa/variablesdb.php');
 
 // FIFA
 $log->logInfo('runDaily: start FIFA');

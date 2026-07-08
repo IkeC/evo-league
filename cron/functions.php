@@ -1,8 +1,8 @@
 <?php
 
 function logSentMail($user, $toAddress, $type) {
-	require('/var/www/yoursite/http/variables.php');
-	require('/var/www/yoursite/http/variablesdb.php');
+	require('/var/www/html/variables.php');
+	require('/var/www/html/variablesdb.php');
 	
 	$sql = "INSERT INTO $mailtable (id, user, toAddress, mailType, logTime) " .
 			"VALUES ('', '$user', '$toAddress', '$type', '".time()."')";
@@ -12,8 +12,8 @@ function logSentMail($user, $toAddress, $type) {
 }
 
 function sendAdminMail($adminSubject, $adminMessage) {
-	require('/var/www/yoursite/http/variables.php');
-	require('/var/www/yoursite/http/variablesdb.php');
+	require('/var/www/html/variables.php');
+	require('/var/www/html/variablesdb.php');
 	
 	$head = "From:".$adminmail."\r\nReply-To:".$adminmail."";
 	@mail ($adminmail, $adminSubject, $adminMessage, $head, $mailconfig);

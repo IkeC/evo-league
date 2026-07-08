@@ -1,0 +1,34 @@
+FROM php:5.5-apache
+
+# ── Parchear repos de Debian Jessie (EOL) a los mirrors históricos ──────────
+RUN echo "deb http://archive.debian.org/debian/ jessie main contrib non-free" > /etc/apt/sources.list && \
+    echo "deb http://archive.debian.org/debian-security/ jessie/updates main contrib non-free" >> /etc/apt/sources.list && \
+    echo "Acquire::Check-Valid-Until \"false\";" > /etc/apt/apt.conf.d/10no-check-valid-until && \
+    echo "APT::Get::AllowUnauthenticated \"true\";" >> /etc/apt/apt.conf.d/10no-check-valid-until
+
+# ── Instalar dependencias ─────────────────────────────────────────────────────
+# En Jessie el cliente MySQL se llama "mysql-client", no "default-mysql-client"
+RUN apt-get update && \
+    apt-get install -y --allow-unauthenticated cron mysql-client procps && \
+    rm -rf /var/lib/apt/lists/*
+
+# ── Instalar extensiones PHP ──────────────────────────────────────────────────
+RUN docker-php-ext-install mysql mysqli
+
+# ── Copiar php.ini personalizado (timezone + error reporting) ────────────────
+COPY php.ini /usr/local/etc/php/php.ini
+
+# ── Instalar crontab ─────────────────────────────────────────────────────────
+COPY crontab /etc/cron.d/evo-league
+RUN chmod 0644 /etc/cron.d/evo-league && \
+    crontab /etc/cron.d/evo-league
+
+# Crear archivo de log para cron
+RUN touch /var/log/cron.log
+
+# ── Entrypoint ───────────────────────────────────────────────────────────────
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+CMD ["apache2-foreground"]
