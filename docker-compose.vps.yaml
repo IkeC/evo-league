@@ -1,10 +1,10 @@
 services:
 
   # ─────────────────────────────────────────────────────────────────────────────
-  #  MySQL 5.7  (base de datos del juego)
+  #  MySQL 5.7  (game database)
   #
-  #  Aislado: NO publica ningún puerto al host. Solo es accesible dentro de la red
-  #  evo_net, por el nombre "db". Cero conflicto con el MySQL 8 del VPS.
+  #  Isolated: does NOT publish any port to the host. Only reachable inside the
+  #  evo_net network, under the name "db". Zero conflict with the VPS's MySQL 8.
   # ─────────────────────────────────────────────────────────────────────────────
   db:
     image: mysql:5.7
@@ -13,7 +13,7 @@ services:
     restart: unless-stopped
     command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
     environment:
-      MYSQL_ROOT_PASSWORD: CAMBIA_ESTE_ROOT_PASS
+      MYSQL_ROOT_PASSWORD: CHANGE_THIS_ROOT_PASS
       MYSQL_DATABASE: pes6
       MYSQL_USER: pes6
       MYSQL_PASSWORD: LATAMeSportsPES6
@@ -22,16 +22,17 @@ services:
     networks:
       - evo_net
     healthcheck:
-      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-pCAMBIA_ESTE_ROOT_PASS"]
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-pCHANGE_THIS_ROOT_PASS"]
       interval: 10s
       timeout: 5s
       retries: 10
 
   # ─────────────────────────────────────────────────────────────────────────────
-  #  phpMyAdmin  (administración de la BD)
+  #  phpMyAdmin  (DB administration)
   #
-  #  Ve la BD por la red interna (PMA_HOST=db) y expone su web en 127.0.0.1:8082
-  #  → exponer por Reverse Proxy de CloudPanel o túnel SSH. No abrir a internet.
+  #  Sees the DB through the internal network (PMA_HOST=db) and exposes its web UI
+  #  on 127.0.0.1:8082 → expose via CloudPanel's Reverse Proxy or an SSH tunnel.
+  #  Do not open it to the internet.
   # ─────────────────────────────────────────────────────────────────────────────
   phpmyadmin:
     image: phpmyadmin:5
@@ -51,10 +52,10 @@ services:
       - evo_net
 
   # ─────────────────────────────────────────────────────────────────────────────
-  #  Aplicación web PHP 5.5 + Cron
+  #  PHP 5.5 web application + Cron
   #
-  #  En evo_net → llega a la BD como host "db". Apache expuesto en 127.0.0.1:8081
-  #  para el Reverse Proxy de CloudPanel (igual que antes).
+  #  On evo_net → reaches the DB as host "db". Apache exposed on 127.0.0.1:8081
+  #  for CloudPanel's Reverse Proxy (same as before).
   # ─────────────────────────────────────────────────────────────────────────────
   web:
     platform: linux/amd64
@@ -78,10 +79,10 @@ services:
       - evo_net
 
   # ─────────────────────────────────────────────────────────────────────────────
-  #  Sixserver — servidor online PES 6
+  #  Sixserver — PES 6 online server
   #
-  #  En evo_net → llega a la BD como host "db". Expone los puertos del juego a la
-  #  calle. ServerIP (107.152.41.33) se anuncia igual desde sixserver.yaml.
+  #  On evo_net → reaches the DB as host "db". Publishes the game ports to the
+  #  outside. ServerIP (107.152.41.33) is still announced from sixserver.yaml.
   # ─────────────────────────────────────────────────────────────────────────────
   sixserver:
     build:
@@ -90,7 +91,7 @@ services:
     container_name: evo_sixserver
     restart: unless-stopped
     ports:
-      - "10881:10881/tcp"   # puerto de juego PES6
+      - "10881:10881/tcp"   # PES6 game port
       - "20200:20200/tcp"   # mainService
       - "20201:20201/tcp"   # networkMenuService
       - "20202:20202/tcp"   # loginService PES6
@@ -105,7 +106,7 @@ services:
       - evo_net
 
 # ─────────────────────────────────────────────────────────────────────────────
-#  Volúmenes y redes
+#  Volumes and networks
 # ─────────────────────────────────────────────────────────────────────────────
 volumes:
   db_data:

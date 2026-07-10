@@ -1,7 +1,7 @@
 services:
 
   # ─────────────────────────────────────────────
-  #  Base de datos MySQL
+  #  MySQL database
   # ─────────────────────────────────────────────
   db:
     image: mysql:5.7
@@ -14,7 +14,7 @@ services:
       MYSQL_PASSWORD: password
     volumes:
       - db_data:/var/lib/mysql
-      - ./setup:/docker-entrypoint-initdb.d   # scripts SQL de inicialización (si los hay)
+      - ./setup:/docker-entrypoint-initdb.d   # SQL initialization scripts (if any)
     networks:
       - evo_net
     healthcheck:
@@ -43,7 +43,7 @@ services:
       - evo_net
 
   # ─────────────────────────────────────────────
-  #  Aplicación web PHP 5.5 + Cron
+  #  PHP 5.5 web application + Cron
   # ─────────────────────────────────────────────
   web:
     build:
@@ -52,9 +52,9 @@ services:
     container_name: evo_web
     restart: unless-stopped
     volumes:
-      - ./http:/var/www/html          # app web
-      - ./cron:/var/www/cron          # scripts cron (montados en /var/www/cron)
-      - cron_logs:/var/log/cron-evo   # logs de cron separados
+      - ./http:/var/www/html          # web app
+      - ./cron:/var/www/cron          # cron scripts (mounted at /var/www/cron)
+      - cron_logs:/var/log/cron-evo   # separate cron logs
     ports:
       - "80:80"
     depends_on:
@@ -64,7 +64,7 @@ services:
       - evo_net
 
   # ─────────────────────────────────────────────
-  #  Sixserver (servidor online PES 6)
+  #  Sixserver (PES 6 online server)
   # ─────────────────────────────────────────────
   sixserver:
     build:
@@ -74,7 +74,7 @@ services:
     restart: unless-stopped
     volumes:
       - sixserver_logs:/var/log/sixserver
-      - ./Sixserver/etc/conf:/opt/sixserver/etc/conf   # config editable sin rebuild
+      - ./Sixserver/etc/conf:/opt/sixserver/etc/conf   # config editable without rebuild
     ports:
       - "10881:10881/tcp"   # PES6 game port
       - "20200:20200/tcp"   # mainService
@@ -88,7 +88,7 @@ services:
       - evo_net
 
 # ─────────────────────────────────────────────
-#  Volúmenes y redes
+#  Volumes and networks
 # ─────────────────────────────────────────────
 volumes:
   db_data:

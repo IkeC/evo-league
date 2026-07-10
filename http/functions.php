@@ -5,13 +5,13 @@
 
 /************************************************************************
 /   evo_gethash($md5hex)                                                /
-/   Calcula el hash5/hash6 (Blowfish-ECB del MD5 con la clave del       /
-/   servidor). Reemplaza la antigua llamada externa a gethash.py, que   /
-/   dependia del entorno Python del sixserver; con contenedores         /
-/   separados ese exec fallaba y el hash quedaba vacio.                 /
-/   Recibe el MD5 en hex (32 chars) que calcula js/md5.js y devuelve    /
-/   32 chars hex, identico a lo que producia gethash.py.                /
-/   Verificacion: evo_gethash("c9bfba2cb510247c7fce25a67d23ac9b")       /
+/   Computes the hash5/hash6 (Blowfish-ECB of the MD5 with the server   /
+/   key). Replaces the old external call to gethash.py, which depended  /
+/   on the sixserver's Python environment; with separate containers     /
+/   that exec failed and the hash ended up empty.                       /
+/   Takes the hex MD5 (32 chars) computed by js/md5.js and returns      /
+/   32 hex chars, identical to what gethash.py produced.                /
+/   Verification: evo_gethash("c9bfba2cb510247c7fce25a67d23ac9b")       /
 /                 == "1dd562bc83e2748511e1d8cec4d27094"                 /
 /************************************************************************/
 function evo_gethash($md5hex) {
@@ -23,7 +23,7 @@ function evo_gethash($md5hex) {
         '27501fd04e6b82c831024dac5c6305221974deb9388a2190' .
         '1d576cbbe2f377ef23d75486010f37819afe6c321a0146d2' .
         '1544ec365bf7289a');
-    $data = pack('H*', $md5hex);   // 16 bytes (2 bloques Blowfish de 8)
+    $data = pack('H*', $md5hex);   // 16 bytes (2 Blowfish blocks of 8)
     $enc  = mcrypt_encrypt(MCRYPT_BLOWFISH, $cipherkey, $data, MCRYPT_MODE_ECB);
     return bin2hex($enc);
 }

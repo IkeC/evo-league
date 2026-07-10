@@ -1,37 +1,37 @@
 FROM php:5.5-apache
 
-# ── Parchear repos de Debian Jessie (EOL) a los mirrors históricos ──────────
+# ── Patch Debian Jessie (EOL) repos to the historical mirrors ────────────────
 RUN echo "deb http://archive.debian.org/debian/ jessie main contrib non-free" > /etc/apt/sources.list && \
     echo "deb http://archive.debian.org/debian-security/ jessie/updates main contrib non-free" >> /etc/apt/sources.list && \
     echo "Acquire::Check-Valid-Until \"false\";" > /etc/apt/apt.conf.d/10no-check-valid-until && \
     echo "APT::Get::AllowUnauthenticated \"true\";" >> /etc/apt/apt.conf.d/10no-check-valid-until
 
-# ── Instalar dependencias ─────────────────────────────────────────────────────
-# En Jessie el cliente MySQL se llama "mysql-client", no "default-mysql-client"
+# ── Install dependencies ──────────────────────────────────────────────────────
+# On Jessie the MySQL client is called "mysql-client", not "default-mysql-client"
 RUN apt-get update && \
     apt-get install -y --allow-unauthenticated cron mysql-client procps && \
     rm -rf /var/lib/apt/lists/*
 
-# ── Instalar extensiones PHP ──────────────────────────────────────────────────
+# ── Install PHP extensions ────────────────────────────────────────────────────
 RUN docker-php-ext-install mysql mysqli
 
-# ── Extension mcrypt: Blowfish para el calculo de hash5/hash6 en PHP ─────────
-#    Reemplaza la antigua llamada externa a gethash.py (Python del sixserver).
-#    libmcrypt es minimo; ver funcion evo_gethash() en http/functions.php.
+# ── mcrypt extension: Blowfish for the hash5/hash6 calculation in PHP ────────
+#    Replaces the old external call to gethash.py (sixserver's Python).
+#    libmcrypt is minimal; see the evo_gethash() function in http/functions.php.
 RUN apt-get update && \
     apt-get install -y --allow-unauthenticated libmcrypt-dev && \
     rm -rf /var/lib/apt/lists/* && \
     docker-php-ext-install mcrypt
 
-# ── Copiar php.ini personalizado (timezone + error reporting) ────────────────
+# ── Copy custom php.ini (timezone + error reporting) ─────────────────────────
 COPY php.ini /usr/local/etc/php/php.ini
 
-# ── Instalar crontab ─────────────────────────────────────────────────────────
+# ── Install crontab ──────────────────────────────────────────────────────────
 COPY crontab /etc/cron.d/evo-league
 RUN chmod 0644 /etc/cron.d/evo-league && \
     crontab /etc/cron.d/evo-league
 
-# Crear archivo de log para cron
+# Create log file for cron
 RUN touch /var/log/cron.log
 
 # ── Entrypoint ───────────────────────────────────────────────────────────────

@@ -232,8 +232,8 @@ if ($false) {
         else {
           $pwdHash = password_hash($passworddb, PASSWORD_DEFAULT);
           $similarAccounts = CheckSimilarAccounts($ip, $name, $pwdHash, $mail);
-          // Restriccion "una cuenta por IP" DESACTIVADA: se permite multiples
-          // cuentas por IP/email. La unicidad del nombre se valida mas abajo.
+          // "One account per IP" restriction DISABLED: multiple accounts per
+          // IP/email are allowed. Name uniqueness is validated further below.
           $similarAccounts = "";
           if (strlen($similarAccounts) > 0 && $cookie_name != 'Ike') {
             echo '<p>It appears you already have at least one account here. <b>You may not sign up for more than one account per IP.</b></p>';
