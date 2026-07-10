@@ -1,10 +1,10 @@
 #!/usr/bin/php
 <?php
-require('/var/www/yoursite/http/variables.php');
-require('/var/www/yoursite/http/variablesdb.php');
-require_once('/var/www/yoursite/http/functions.php');
-require ('/var/www/yoursite/http/log/KLogger.php');
-$log = new KLogger('/var/www/yoursite/http/log/dc-games/', KLogger::INFO);	
+require('/var/www/html/variables.php');
+require('/var/www/html/variablesdb.php');
+require_once('/var/www/html/functions.php');
+require ('/var/www/html/log/KLogger.php');
+$log = new KLogger('/var/www/html/log/dc-games/', KLogger::INFO);	
 
 // Delete 0 min. matches
 $sql = "DELETE FROM six_matches_status WHERE minutes=0 AND updated < date_sub(now(), INTERVAL 5 MINUTE)";

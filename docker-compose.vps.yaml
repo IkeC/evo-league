@@ -1,0 +1,118 @@
+services:
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  #  MySQL 5.7  (game database)
+  #
+  #  Isolated: does NOT publish any port to the host. Only reachable inside the
+  #  evo_net network, under the name "db". Zero conflict with the VPS's MySQL 8.
+  # ─────────────────────────────────────────────────────────────────────────────
+  db:
+    image: mysql:5.7
+    platform: linux/amd64
+    container_name: evo_db
+    restart: unless-stopped
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    environment:
+      MYSQL_ROOT_PASSWORD: CHANGE_THIS_ROOT_PASS
+      MYSQL_DATABASE: pes6
+      MYSQL_USER: pes6
+      MYSQL_PASSWORD: LATAMeSportsPES6
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - evo_net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-pCHANGE_THIS_ROOT_PASS"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  #  phpMyAdmin  (DB administration)
+  #
+  #  Sees the DB through the internal network (PMA_HOST=db) and exposes its web UI
+  #  on 127.0.0.1:8082 → expose via CloudPanel's Reverse Proxy or an SSH tunnel.
+  #  Do not open it to the internet.
+  # ─────────────────────────────────────────────────────────────────────────────
+  phpmyadmin:
+    image: phpmyadmin:5
+    platform: linux/amd64
+    container_name: evo_phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_PORT: 3306
+      UPLOAD_LIMIT: 256M
+    ports:
+      - "127.0.0.1:8082:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - evo_net
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  #  PHP 5.5 web application + Cron
+  #
+  #  On evo_net → reaches the DB as host "db". Apache exposed on 127.0.0.1:8081
+  #  for CloudPanel's Reverse Proxy (same as before).
+  # ─────────────────────────────────────────────────────────────────────────────
+  web:
+    platform: linux/amd64
+    build:
+      context: /home/bucketcode-pes6/evo-league-master/evo-league-master/docker
+      dockerfile: Dockerfile.web
+    container_name: evo_web
+    restart: unless-stopped
+    environment:
+      APACHE_PORT: 8081
+    ports:
+      - "127.0.0.1:8081:8081"
+    volumes:
+      - /home/bucketcode-pes6/htdocs/pes6.bucketcode.net:/var/www/html
+      - /home/bucketcode-pes6/evo-league-master/evo-league-master/cron:/var/www/cron
+      - cron_logs:/var/log/cron-evo
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - evo_net
+
+  # ─────────────────────────────────────────────────────────────────────────────
+  #  Sixserver — PES 6 online server
+  #
+  #  On evo_net → reaches the DB as host "db". Publishes the game ports to the
+  #  outside. ServerIP (107.152.41.33) is still announced from sixserver.yaml.
+  # ─────────────────────────────────────────────────────────────────────────────
+  sixserver:
+    build:
+      context: /home/bucketcode-pes6/evo-league-master/evo-league-master/Sixserver
+      dockerfile: Dockerfile
+    container_name: evo_sixserver
+    restart: unless-stopped
+    ports:
+      - "10881:10881/tcp"   # PES6 game port
+      - "20200:20200/tcp"   # mainService
+      - "20201:20201/tcp"   # networkMenuService
+      - "20202:20202/tcp"   # loginService PES6
+      - "20203:20203/tcp"   # loginService WE2007
+    volumes:
+      - sixserver_logs:/var/log/sixserver
+      - /home/bucketcode-pes6/evo-league-master/evo-league-master/Sixserver/etc/conf:/opt/sixserver/etc/conf
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - evo_net
+
+# ─────────────────────────────────────────────────────────────────────────────
+#  Volumes and networks
+# ─────────────────────────────────────────────────────────────────────────────
+volumes:
+  db_data:
+  sixserver_logs:
+  cron_logs:
+
+networks:
+  evo_net:
+    driver: bridge

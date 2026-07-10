@@ -144,16 +144,12 @@ $checked = "checked='checked'";
       }
       $hash5 = mysql_real_escape_string($_POST["hash5"]);
       if (!empty($serial5)) {
-      $result = array();
-      $res5 = exec("/opt/sixserver/sixserver-env/bin/python2.6 /opt/sixserver/lib/fiveserver/gethash.py ".$hash5, $result);
-        $hash5 = $result[0];
+        $hash5 = evo_gethash($_POST["hash5"]);
       }
-      
+
       $hash6 = mysql_real_escape_string($_POST["hash6"]);
       if (!empty($serial6)) {
-        $result = array();
-        $res6 = exec("/opt/sixserver/sixserver-env/bin/python2.6 /opt/sixserver/lib/fiveserver/gethash.py ".$hash6, $result);
-        $hash6 = $result[0];
+        $hash6 = evo_gethash($_POST["hash6"]);
       }
 			$defaultversion1 = mysql_real_escape_string($_POST['defaultversion']);
 						 

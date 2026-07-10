@@ -1,11 +1,11 @@
 #!/usr/bin/php
 <?php
 // read mails from internal bounce mailbox and set invalidEmail=1 for these email addresses
-require('/var/www/yoursite/http/variables.php');
-require('/var/www/yoursite/http/variablesdb.php');
-require_once('/var/www/yoursite/http/functions.php');
-require ('/var/www/yoursite/http/log/KLogger.php');
-$log = new KLogger('/var/www/yoursite/http/log/bounces/', KLogger::INFO);	
+require('/var/www/html/variables.php');
+require('/var/www/html/variablesdb.php');
+require_once('/var/www/html/functions.php');
+require ('/var/www/html/log/KLogger.php');
+$log = new KLogger('/var/www/html/log/bounces/', KLogger::INFO);	
 
 $mailbox = imap_open('{localhost:993/ssl/novalidate-cert}', 'bounce', 'bounce01$');
 $mailbox_info = imap_check($mailbox);

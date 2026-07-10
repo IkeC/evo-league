@@ -1,0 +1,42 @@
+FROM php:5.5-apache
+
+# ── Patch Debian Jessie (EOL) repos to the historical mirrors ────────────────
+RUN echo "deb http://archive.debian.org/debian/ jessie main contrib non-free" > /etc/apt/sources.list && \
+    echo "deb http://archive.debian.org/debian-security/ jessie/updates main contrib non-free" >> /etc/apt/sources.list && \
+    echo "Acquire::Check-Valid-Until \"false\";" > /etc/apt/apt.conf.d/10no-check-valid-until && \
+    echo "APT::Get::AllowUnauthenticated \"true\";" >> /etc/apt/apt.conf.d/10no-check-valid-until
+
+# ── Install dependencies ──────────────────────────────────────────────────────
+# On Jessie the MySQL client is called "mysql-client", not "default-mysql-client"
+RUN apt-get update && \
+    apt-get install -y --allow-unauthenticated cron mysql-client procps && \
+    rm -rf /var/lib/apt/lists/*
+
+# ── Install PHP extensions ────────────────────────────────────────────────────
+RUN docker-php-ext-install mysql mysqli
+
+# ── mcrypt extension: Blowfish for the hash5/hash6 calculation in PHP ────────
+#    Replaces the old external call to gethash.py (sixserver's Python).
+#    libmcrypt is minimal; see the evo_gethash() function in http/functions.php.
+RUN apt-get update && \
+    apt-get install -y --allow-unauthenticated libmcrypt-dev && \
+    rm -rf /var/lib/apt/lists/* && \
+    docker-php-ext-install mcrypt
+
+# ── Copy custom php.ini (timezone + error reporting) ─────────────────────────
+COPY php.ini /usr/local/etc/php/php.ini
+
+# ── Install crontab ──────────────────────────────────────────────────────────
+COPY crontab /etc/cron.d/evo-league
+RUN chmod 0644 /etc/cron.d/evo-league && \
+    crontab /etc/cron.d/evo-league
+
+# Create log file for cron
+RUN touch /var/log/cron.log
+
+# ── Entrypoint ───────────────────────────────────────────────────────────────
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]
+CMD ["apache2-foreground"]

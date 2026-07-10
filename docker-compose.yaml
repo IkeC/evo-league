@@ -1,0 +1,100 @@
+services:
+
+  # ─────────────────────────────────────────────
+  #  MySQL database
+  # ─────────────────────────────────────────────
+  db:
+    image: mysql:5.7
+    container_name: evo_db
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: evo
+      MYSQL_USER: evo_user
+      MYSQL_PASSWORD: password
+    volumes:
+      - db_data:/var/lib/mysql
+      - ./setup:/docker-entrypoint-initdb.d   # SQL initialization scripts (if any)
+    networks:
+      - evo_net
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-ppassword"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # ─────────────────────────────────────────────
+  #  phpMyAdmin
+  # ─────────────────────────────────────────────
+  phpmyadmin:
+    image: phpmyadmin:latest
+    container_name: evo_phpmyadmin
+    restart: unless-stopped
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: password
+    ports:
+      - "8080:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - evo_net
+
+  # ─────────────────────────────────────────────
+  #  PHP 5.5 web application + Cron
+  # ─────────────────────────────────────────────
+  web:
+    build:
+      context: ./docker
+      dockerfile: Dockerfile.web
+    container_name: evo_web
+    restart: unless-stopped
+    volumes:
+      - ./http:/var/www/html          # web app
+      - ./cron:/var/www/cron          # cron scripts (mounted at /var/www/cron)
+      - cron_logs:/var/log/cron-evo   # separate cron logs
+    ports:
+      - "80:80"
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - evo_net
+
+  # ─────────────────────────────────────────────
+  #  Sixserver (PES 6 online server)
+  # ─────────────────────────────────────────────
+  sixserver:
+    build:
+      context: ./Sixserver
+      dockerfile: Dockerfile
+    container_name: evo_sixserver
+    restart: unless-stopped
+    volumes:
+      - sixserver_logs:/var/log/sixserver
+      - ./Sixserver/etc/conf:/opt/sixserver/etc/conf   # config editable without rebuild
+    ports:
+      - "10881:10881/tcp"   # PES6 game port
+      - "20200:20200/tcp"   # mainService
+      - "20201:20201/tcp"   # networkMenuService
+      - "20202:20202/tcp"   # loginService PES6
+      - "20203:20203/tcp"   # loginService WE2007
+    depends_on:
+      db:
+        condition: service_healthy
+    networks:
+      - evo_net
+
+# ─────────────────────────────────────────────
+#  Volumes and networks
+# ─────────────────────────────────────────────
+volumes:
+  db_data:
+  sixserver_logs:
+  cron_logs:
+
+networks:
+  evo_net:
+    driver: bridge
